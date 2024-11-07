@@ -34,3 +34,14 @@ export interface PicaioLink {
 	display_as: string
 	label: string
 }
+
+export interface PicaioPagination {
+	number: number
+	size: number
+}
+
+export interface PicaioQueryParams{
+	sort?: Array<string>
+	page?: PicaioPagination
+	filter?: object
+}
